@@ -20,7 +20,7 @@ app.use('/service', serviceRoutes);
 
 // Connect to MongoDB
 mongoose.set('strictQuery', true);
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://aadarshgupta7828:jn3CL1kxCYPDI0XR@cluster0.iz9yx.mongodb.net/')
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
